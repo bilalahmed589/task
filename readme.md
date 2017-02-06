@@ -10,6 +10,19 @@ MVC,IOC (dependency injection),Eloquent ORM ,Blade Template, Transaction Managem
 
 Interface injection is used to inject business services into controller. Because it is good design principle "program for interface" than "program for implementation". Also repository is injected in service layer to ensure DAO pattern.
 
+Below 2 steps are the required to run this test.
+
+For database settings these is a file at root of folder with name ".env". Set db connections there.
+Setup virtual host in apache
+            <VirtualHost *:80>
+                   ServerName tasks.com
+                   DocumentRoot "path-to-project/task/public/"
+                   <Directory "path-to-project/task/public/">
+                   </Directory>
+   </VirtualHost>
+* Please note project folder name is "task". You need to point public folder as virtual host.
+
+
 **This project is for demonstration purpose only.**
 
 
